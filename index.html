@@ -2,21 +2,61 @@
 <html lang="ar" dir="rtl">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Diesel Requests</title>
 <style>
-  body { font-family: Calibri; padding: 20px; background: #f5f5f5; text-align: center; }
-  .box { background: #fff; padding: 20px; border-radius: 10px; max-width: 400px; margin: 50px auto; }
-  a.button { display: inline-block; margin-top: 20px; padding: 10px 20px; background: #4CAF50; color: white; text-decoration: none; border-radius: 5px; }
+  body {
+    font-family: Calibri, sans-serif;
+    padding: 20px;
+    background: #f5f5f5;
+    text-align: center;
+  }
+  .box {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+    margin: 50px auto;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  h2, h3 {
+    color: #333;
+    margin: 10px 0;
+  }
+  a.button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  a.button:hover {
+    background: #45a049;
+  }
 </style>
 </head>
 <body>
 <div class="box">
-  <h2> *** تسجيل طلبات قسم الديزل ***  </h2>
-   (استئذان - عرضي - اجازة)  </h2>
-<h3> *** Diesel Dept. Orders Registration >>>
- (Permission - emergency - annual)  </h3>
-<a class="button" href="https://script.google.com/macros/s/AKfycbxIm57v3donr7EqYDLrQ_RF9Xl1TQ05njAdW1p6ZWkvG8u_gNOzb51zijYNzmBqCKKu/exec" target="_blank">Open Form</a>
+  <h2>*** تسجيل طلبات قسم الديزل ***</h2>
+  <h3>(استئذان - عرضي - اجازة)</h3>
+  <h3>*** Diesel Dept. Orders Registration >>> (Permission - emergency - annual)</h3>
+  
+  <!-- الزر المعدل -->
+  <a class="button" href="#" onclick="openWebApp()">فتح النموذج</a>
 </div>
+
+<script>
+function openWebApp() {
+  // ضع هنا رابط Web App النهائي من Google Apps Script
+  const webAppUrl = "https://script.google.com/macros/s/AKfycbxIm57v3donr7EqYDLrQ_RF9Xl1TQ05njAdW1p6ZWkvG8u_gNOzb51zijYNzmBqCKKu/exec";
+  window.open(webAppUrl, '_blank'); // يفتح الرابط في نافذة جديدة داخل المتصفح
+}
+</script>
+
 </body>
 </html>
 
